@@ -27,7 +27,7 @@ const AskQuestion = () => {
 
   useEffect(() => {
     loadCategories();
-  }, []);
+  }, [data]);
 
   const { user, token } = isAuthenticated();
 
@@ -68,11 +68,6 @@ const AskQuestion = () => {
     </form>
   );
 
-  const showSuccess = () => {
-    if (success) {
-      return <h3 className="text-success">{name} is created</h3>;
-    }
-  };
   const showError = () => {
     if (error) {
       return <h3 className="text-danger">Category should be uniq</h3>;
@@ -87,7 +82,7 @@ const AskQuestion = () => {
     >
       <div className="row">
         <div className="col-md-8 offset-md-2">
-          {showSuccess()}
+     
           {showError()}
           {newCategoryFom()}
           {/* {showQuestions()} */}
