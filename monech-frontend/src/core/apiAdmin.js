@@ -1,4 +1,4 @@
-import { API } from "../.config";
+import { API } from "../apiurl";
 
 export const createCategory = ( category) => {
   return fetch(`${API}/category/create`, {
