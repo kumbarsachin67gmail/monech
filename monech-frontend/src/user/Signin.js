@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 import Layout from "../core/Layout";
 import { signin, authenticate, isAuthenticated } from "../auth";
+import '../styles.css';
 
 const Signin = () => {
   const [values, setValues] = useState({
@@ -37,9 +38,9 @@ const Signin = () => {
   };
 
   const signUpForm = () => (
-    <form className="col-9 mx-auto ">
+    <form className="col-sm-9 col-md-8 col-lg-5 mx-auto signstyle">
       <div className="form-group">
-        <label className="text-muted">Email</label>
+        <label className="text-white">Email</label>
         <input
           onChange={handleChange("email")}
           type="email"
@@ -49,7 +50,7 @@ const Signin = () => {
       </div>
 
       <div className="form-group">
-        <label className="text-muted">Password</label>
+        <label className="text-white">Password</label>
         <input
           onChange={handleChange("password")}
           type="password"

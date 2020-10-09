@@ -1,0 +1,28 @@
+.btn,
+.jumbotron,
+.nav:hover {
+  border-radius: 0px;
+}
+.jumbotron{
+    background:#d1d4da;
+}
+:root {
+  --mainBlue: #14131f;
+  --lightBlue: #009ffd;
+
+  --mainWhite: hsla(40, 7%, 67%, 0.993);
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+body {
+  font-family: "oswald" !important;
+}
+.signstyle {
+  background: rgb(40, 43, 35);
+  padding: 40px;
+  padding-bottom: 80px;
+  border-radius: 25px;
+}
+.text-white {
+  color: white;
+}
